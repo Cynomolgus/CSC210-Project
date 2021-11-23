@@ -1,0 +1,110 @@
+body {
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    background-color: coral;
+    font-family: "montserrat";
+}
+
+
+nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color:black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 30px;
+    text-transform: uppercase;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.login{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    z-index: 15;
+    top: 30%;
+    left: 50%;
+    margin: -100px 0 0 -200px;
+    background: white;
+    border-radius: 10px;
+}
+.login h1{
+    text-align: center;
+}
+
+
+#emial{
+    position: relative;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#password{
+    position: relative;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#password input{
+    text-align: left;
+    width: 80%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+}
+
+#emial input{
+    width: 80%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+}
+
+#submit{
+    display: block;
+    margin: 0 auto;
+    width: 91%;
+    height: 50px;
+}
+
+.forgot{
+    text-decoration: underline; 
+    padding-left: 9%;                                      
+}
+
+#remember{
+    padding-left: 9%;
+}
+
+.register{
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+

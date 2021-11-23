@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='register.css') }}">
+     </head>
+
+     <body>
+        <nav>
+            <label class = "logo">UR Buy&Sell</label>
+            <ul>
+                <li><a href="{{url_for('register')}}">Sign Up</a></li>
+                <li><a href="{{url_for('login')}}">Log in</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+        <div class = "register">
+            <h1>Register</h1>
+            <form method="POST">
+                 {{form.csrf_token}}
+                  <p id = "emial">{{form.email()}}</p>
+                  <p id = "username">{{form.username()}}</p>
+                  <p id = "password">{{form.password()}}</p>
+                  <p class = "submit">{{form.submit()}}</p>
+                  <div class = "login">
+                    <span><a href="{{url_for('login')}}">Login</a></span>
+                 </div>
+             </form>
+        </div>
+    </body>
+</html>

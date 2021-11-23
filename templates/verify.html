@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>hello</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='verify.css') }}">
+     </head>
+
+    <body>
+        <div class = "otp">
+            <h1>OTP</h1>
+            <form method="POST">
+                {{form.csrf_token}}
+                  <p id = "otp">{{form.OTP()}}</p>
+                  <p id = "submit">{{form.OTP_send()}}</p>
+            </form>
+        </div>
+    </body>
+</html>

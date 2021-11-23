@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='login.css') }}">
+     </head>
+
+    <body>
+        <nav>
+            <label class = "logo">UR Buy&Sell</label>
+            <ul>
+                <li><a href="{{url_for('index')}}">Home</a></li>
+                <li><a herf="#">Temp1</a></li>
+                <li><a herf="#">Temp2</a></li>
+                <li><a herf="#">Temp3</a></li>
+            </ul>
+        </nav>
+        <div class = "login">
+            <h1>Login</h1>
+            <form method="POST">
+                 {{form.csrf_token}}
+                  <p id = "emial">{{form.email()}}</p>
+                  <p id = "password">{{form.password()}}</p>
+                  <div class = "forgot">
+                    <span><a href="{{url_for('register')}}">Forgot password?</a></span>
+                 </div>
+                  <p id = "remember">Remember me {{form.remember_me()}}</p>
+                  <p id = "submit">{{form.submit()}}</p>
+                  <div class = "register">
+                    <span><a href="{{url_for('register')}}">Sign Up</a></span>
+                 </div>
+               
+             </form>
+        </div>
+    </body>
+</html>

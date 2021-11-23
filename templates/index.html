@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>index</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='index.css') }}">
+     </head>
+    <body>
+        <nav>
+            <label class = "logo">UR Buy&Sell</label>
+            <ul>
+                <li><a href="{{url_for('register')}}">Sign Up</a></li>
+                <li><a href="{{url_for('login')}}">Log in</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+        <div class = "test">
+        <p>Buy and Sell Used</p>
+        <p>Within the</p>
+        <p>UR community</p>
+        </div>
+    </body>
+</html>

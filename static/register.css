@@ -1,0 +1,126 @@
+body {
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    background-color: coral;
+    font-family: "montserrat";
+}
+
+
+nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color:black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 30px;
+    text-transform: uppercase;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.register{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    z-index: 15;
+    top: 30%;
+    left: 50%;
+    margin: -100px 0 0 -200px;
+    background: white;
+    border-radius: 10px;
+}
+.register h1{
+    text-align: center;
+}
+
+#emial{
+    position: relative;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#emial input{
+    width: 80%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+}
+
+
+#username{
+    position: relative;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#username input{
+    text-align: left;
+    width: 80%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+}
+
+
+#password{
+    position: relative;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#password input{
+    text-align: left;
+    width: 80%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+}
+
+#submit{
+    margin-left: 5px;
+    display: block;
+    margin: 0 auto;
+    width: 83.5%;
+    height: 50px;
+}
+
+#send{
+    margin-left: 5px;
+    width: 20%;
+    height: 50px;
+}
+
+.login{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.OTP{
+    display: inline;
+    vertical-align: top
+}

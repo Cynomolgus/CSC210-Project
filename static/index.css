@@ -1,0 +1,58 @@
+body {
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    background-color: coral;
+    font-family: "montserrat";
+    background-image:url('4-7-17_Jericho_Cervantes_1_rush_rhees.jpg') ;
+    background-size:cover;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color:black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 30px;
+    text-transform: uppercase;
+}
+
+nav ul li a{
+    font-size: 17px;
+}
+
+.test{
+    font-size: 70px;
+    padding-left: 50%;
+    color: antiquewhite;
+    font-weight: bold;
+    padding-top: 5%;
+}
+p{
+    height: 120px;
+}

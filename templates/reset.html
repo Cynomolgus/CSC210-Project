@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>hello</title>
+        <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='verify.css') }}">
+     </head>
+
+    <body>
+        <div class = "reset">
+            <h1>Forgot password</h1>
+            <form method="POST">
+                <input type="text" id="email" name="email">
+                <input type="submit" id="send" name="send">
+            </form>
+        </div>
+    </body>
+</html>
